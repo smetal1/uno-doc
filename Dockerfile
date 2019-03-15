@@ -1,6 +1,6 @@
 FROM saurav7055/xlsx-pdf
 
-WORKDIR /
+WORKDIR /NODE
 COPY . .
 
 ENV HOSTNAME 0.0.0.0
@@ -14,4 +14,4 @@ RUN npm install
 
 EXPOSE 4000
 
-CMD ["node","app.js"]
+CMD ["npm","start"]
