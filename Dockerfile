@@ -1,12 +1,12 @@
-FROM telemark/docker-node-unoconv:10.13.0
+FROM saurav7055/xlsx-pdf
 
-WORKDIR /app
+WORKDIR /
 COPY . .
 
 ENV HOSTNAME 0.0.0.0
 ENV PORT 4000
 
-RUN yarn && yarn cache clean
+RUN npm install
 
 EXPOSE 4000
 
