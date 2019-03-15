@@ -10,4 +10,4 @@ RUN yarn && yarn cache clean
 
 EXPOSE 4000
 
-CMD ["npm","start"]
+CMD ["node","app.js"]
